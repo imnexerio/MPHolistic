@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://properly-ideal-monkey.ngrok-free.app"
+    private const val BASE_URL = "https://<your server url here>"
 
     val instance: Retrofit by lazy {
         Retrofit.Builder()
