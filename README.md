@@ -18,6 +18,7 @@ MPHolistic is an open-source Android application designed to leverage cutting-ed
 - **Real-Time Vision Processing**: Process visual data in real-time for immediate feedback.
 - **User-Friendly Interface**: Intuitive and easy-to-use interface for a seamless user experience.
 - **Extensible Framework**: Easily extend and customize the application to fit your needs.
+- **Sending Landmark**: This can send the landmark to the server.
 - ![image](https://github.com/user-attachments/assets/1c92244b-e802-4666-b88d-ef00a9071bb9)
 
 
