@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.2"
+agp = "8.6.0"
 appcompat = "1.7.0"
 cameraCore = "1.3.4"
 constraintlayout = "2.1.4"
