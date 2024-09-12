@@ -1,0 +1,41 @@
+//task downloadTaskFile0(type: Download) {
+//    src 'https://storage.googleapis.com/mediapipe-models/gesture_recognizer/gesture_recognizer/float16/1/gesture_recognizer.task'
+//    dest project.ext.ASSET_DIR + '/gesture_recognizer.task'
+//    overwrite false
+//}
+
+//preBuild.dependsOn downloadTaskFile0
+
+
+//task downloadTaskFile(type: Download) {
+//    src 'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task'
+//    dest project.ext.ASSET_DIR + '/pose_landmarker_heavy.task'
+//    overwrite false
+//}
+//
+//task downloadTaskFile1(type: Download) {
+//    src 'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task'
+//    dest project.ext.ASSET_DIR + '/pose_landmarker_full.task'
+//    overwrite false
+//}
+
+task downloadTaskFile1(type: Download) {
+    src 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task'
+    dest project.ext.ASSET_DIR + '/face_landmarker.task'
+    overwrite false
+}
+
+task downloadTaskFile2(type: Download) {
+    src 'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task'
+    dest project.ext.ASSET_DIR + '/pose_landmarker_lite.task'
+    overwrite false
+}
+
+task downloadTaskFile(type: Download) {
+    src 'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task'
+    dest project.ext.ASSET_DIR + '/hand_landmarker.task'
+    overwrite false
+}
+
+//preBuild.dependsOn downloadTaskFile, downloadTaskFile1, downloadTaskFile2
+preBuild.dependsOn downloadTaskFile,downloadTaskFile1, downloadTaskFile2
